@@ -6,14 +6,15 @@ voyages = [
     { ville: "Montréal", duree: 15 }
 ]
 
-#defi n2: afficher "Voyages a X de Y jours"
+#defi n3: afficher "Voyages a X de Y jours" SSI duree <= 5
 
 i = 0
 voyages.each do
-
-puts "Voyages a " + voyages[i][:ville]
-puts " de " + voyages[i][:duree].to_s + " jours" 
-i=i+1
-
+if voyages[i][:duree] <= 5
+	puts "Voyages a " + voyages[i][:ville]
+	puts " de " + voyages[i][:duree].to_s + " jours" 
+	
+end
+i = i + 1
 end
 
