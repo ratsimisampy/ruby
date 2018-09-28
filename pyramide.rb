@@ -31,17 +31,17 @@ tab = Array.new
 		tab[i]=res
 	# **********
 		s = ""
-		n2 = n - i
+		n2 = (n - i)-1
 		n2.times do s = s + empty_char end 
-puts s	# log			
+# puts s	# log			
 				tab_empty[i]= s		
-		puts "tab_empty #{i}: " + s
+		puts "Dans tab_empty #{i} on a: " + s
 		i = i + 1
 
 	end
-print " "
-print " On re ecrit dans le bon ordre: "
-print " "
+puts " "
+puts "On re ecrit dans l'ordre inversee pour concatener tab[] a tab_empty[]  "
+puts " "
 ##==Etape 2  ============
 # ------> on reécrit dans le bon ordre : tab_empty + tab , n fois
 #	****#
@@ -60,3 +60,5 @@ else
 
 end
 
+print ""
+puts "You win!!! just need code optimization !!!"
